@@ -1,0 +1,8 @@
+/*Remove all spaces from box model*/
+
+*
+{
+    border: none;
+    padding: 0;
+    box-sizing: border-box;
+}
