@@ -64,6 +64,11 @@ a
   min-height: 74px;
 }
 
+.navbar img
+{
+  height: 5rem;
+}
+
 .logo 
 {
   height: 38px;
@@ -323,6 +328,34 @@ p
   color: var(--black);
 }
 
+/* SEARCH */
+.search-box 
+{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.search-box button
+{
+  display: flex;
+  height: 35px;
+  width: 40px;
+  align-items: center;
+  justify-content: center;
+}
+#searchInput
+{
+  width: 60%;
+  padding: 8px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+
+
 /*ABOUT*/
 .two-columns 
 {
@@ -482,7 +515,8 @@ p
   }
   .menu-button .fa-bars 
   {
-  color: var(--white);
+    font-size: 1.5rem;
+    color: var(--white);
   }
   .nav-links 
   {
@@ -498,8 +532,6 @@ p
 
   .nav-links.show-menu 
   {
-    display: block;
-    animation: fadeIn 0.5s ease-out forwards;
     display: flex;
   }
 
