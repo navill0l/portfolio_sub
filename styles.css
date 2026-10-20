@@ -1,8 +1,70 @@
-/*Remove all spaces from box model*/
+/*Page settings*/
 
-*
-{
-    border: none;
-    padding: 0;
-    box-sizing: border-box;
+body {
+  margin: 0;
+  background-color: var(--white);
+  color: var(--paragraph-color);
+  font-family: "Encode Sans Expanded", sans-serif;
+  font-size: 20px;
+  line-height: 1.5;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+a {
+  color: inherit;
+}
+
+/* Theme colors from figma design file */
+:root {
+  --black: #000000;
+  --white: #FFFFFF;
+  --lime-green: #ACFF47;
+  --sky-blue: #47C2FF;
+  --yellow: #FFF947;
+  --paragraph-color: #333333;
+  --heading2-color: #262626;
+  --beige: #E9E2D9;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  background-color: var(--black);
+  padding: 0 50px;
+  min-height: 74px;
+}
+
+.logo {
+  height: 38px;
+  width: auto;
+}
+
+/* the row of links (HOME ABOUT PROJECTS CASE STUDY) */
+.nav-links {
+  display: flex;
+  gap: 50px;
+}
+
+
+.nav-links a {
+  color: var(--white);
+  font-size: 16px;
+  font-weight: 500;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.nav-links a:hover {
+  color: var(--yellow);
+}
+
+/* the link of the page you are on is yellow */
+.nav-links a.active {
+  color: var(--yellow);
 }
