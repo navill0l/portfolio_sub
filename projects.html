@@ -9,13 +9,14 @@
         <script src="script.js" defer></script>
 
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Encode+Sans+Condensed:wght@500;600&family=Encode+Sans+Expanded:wght@400;500;600&display=swap">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     </head>
     <body>
         <header class ="navbar">
             
-                <img src="images/logo.png" alt="IMB Logo" class="logo">
-                <nav class="nav-links">
+                <a href="home.html" aria-label="Home"><img src="images/logo.png" alt="IMB Logo" class="logo"></a>
+                <button class="menu-button" onclick="toggleMenu()"><i class="fa-solid fa-bars"></i></button>
+                <nav id="navLinks" class="nav-links">
                         <a href="home.html">Home</a>
                         <a href="about.html">About</a>
                         <a href="projects.html">Projects</a>
@@ -27,39 +28,58 @@
             <section id="caseStudy-header" class="section top-section">
                 <div class="top-text">
                     <h1>Lecture Site</h1>
-                    <p>This website was made for a class in WEBCS, it features a gaming club's website with full responsiveness for common devices. Click on the images "see more" to be redirected to the Github repository!</p>
+                    <p>This website was made for a class in WEBCS, it features a gaming club's website with full responsiveness for common devices. Click on "see more" on the project cards to be redirected to the project's Github repository!</p>
+                    <a class="see-more" href="https://github.com/navill0l/gamingClub">See the whole project on GitHub!</a>
                 </div>
 
+                
                 <div class="top-picture">
-                    <img src="images/landScapePicture.jpg" alt="Photo of Ivan Bautista">
+                    <img src="images/projectImages/leagueClub.png" alt="League of Legends Club Website">
                 </div>
             </section>
+            
 
-            <section id="caseStudy-projects" class="projects-section">
-                <h2>Other Projects: </h2>
 
-                <form id="searchProjects" action="projects.html" method="get">
-                    <input type="text" name="search" placeholder="Search projects...">
-                    <button type="submit">Search</button>
-                </form>
+            <section class="section line-above">
+            <h2>Other Projects:</h2>
 
-                <div class="project-box">
-                    <h3>Project 1</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                    <p>See more...</p>
-                </div>
-                <div class="project-box">
-                    <h3>Project 2</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                    <p>See more...</p>
-                </div>
-                <div class="project-box">
-                    <h3>Project 3</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                    <p>See more...</p>
+            <!-- search box: script.js runs searchProjects() when typing or clicking the button -->
+            <div class="search-box">
+                <input type="text" id="searchInput" placeholder="Search projects..." onkeyup="searchProjects()">
+                <button onclick="searchProjects()"><i class="fa-solid fa-magnifying-glass"></i></button>
+            </div>
+
+            <!-- shown by script.js when no project matches -->
+            <p class="no-results" id="noResults">No projects found.</p>
+
+            
+                <div class="card-grid">
+
+                    <div class="project-card">
+                        <div class="image-box"><img src="images/projectImages/leagueClub.png" alt="League of Legends Club Website"></div>
+                        <h3>League of Legends Club Website</h3>
+                        <p>A website featuring a gaming club for league of legends players!</p>
+                        <a class="see-more" href="https://github.com/navill0l/gamingClub">See more...</a>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="image-box"><img src="images/projectImages/wizardSite.png" alt="Wizard Staff Store"></div>
+                        <h3>Wizard Staff Store </h3>
+                        <p>A website for a staff store, featuring a variety of different wizard staves!</p>
+                        <a class="see-more" href="https://github.com/navill0l/wizardStaffStore">See more...</a>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="image-box"><img src="images/projectImages/portfolio.png" alt="Portfolio Website"></div>
+                        <h3>Portfolio Website</h3>
+                        <p>The portfolio you're viewing right now!</p>
+                        <a class="see-more" href="https://github.com/navill0l/portfolio_sub">See more...</a>
+                    </div>
+
                 </div>
 
             </section>
+
         </main>
         
     </body>

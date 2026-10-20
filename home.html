@@ -14,8 +14,9 @@
     <body>
         <header class ="navbar">
             
-                <img src="images/logo.png" alt="IMB Logo" class="logo">
-                <nav class="nav-links">
+                <a href="home.html" aria-label="Home"><img src="images/logo.png" alt="IMB Logo" class="logo"></a>
+                <button class="menu-button" onclick="toggleMenu()"><i class="fa-solid fa-bars"></i></button>
+                <nav id="navLinks" class="nav-links">
                         <a href="home.html">Home</a>
                         <a href="about.html">About</a>
                         <a href="projects.html">Projects</a>
@@ -43,7 +44,7 @@
                     at Holy Angel University majoring in Computer Science. Welcome to my portfolio!
                     </p>
                 </div>
-
+                
                 <div class="top-picture">
                     <img src="images/landScapePicture.jpg" alt="Photo of Ivan Bautista">
                     <p class="caption">Bautista, Ivan Michael M.</p>
@@ -56,24 +57,27 @@
                 <div class="card-grid">
 
                     <div class="project-card">
-                    <div class="image-box"></div>
-                    <h3>Lorem ipsum</h3>
-                    <p>Lorem ipsum dolor mala fillerus moros tegus mas te masi lorem dolor ipum loros de mal orefa</p>
-                    <a class="see-more" href="projects.html">See more...</a>
+                    <a class="card-link" href="projects.html"></a>
+                    <div class="image-box"><img src="images/projectImages/leagueClub.png" alt="League of Legends Club Website"></div>
+                    <h3>League of Legends Club Website</h3>
+                    <p>A website featuring a gaming club for league of legends players!</p>
+                    <a class="see-more" href="https://github.com/navill0l/gamingClub">See more...</a>
                     </div>
 
                     <div class="project-card">
-                    <div class="image-box"></div>
-                    <h3>Lorem ipsum</h3>
-                    <p>Lorem ipsum dolor mala fillerus moros tegus mas te masi lorem dolor ipum loros de mal orefa</p>
-                    <a class="see-more" href="projects.html">See more...</a>
+                    <a class="card-link" href="projects.html"></a>
+                    <div class="image-box"><img src="images/projectImages/wizardSite.png" alt="Wizard Staff Store"></div>
+                    <h3>Wizard Staff Store </h3>
+                    <p>A website for a staff store, featuring a variety of different wizard staves!</p>
+                    <a class="see-more" href="https://github.com/navill0l/wizardStaffStore">See more...</a>
                     </div>
 
                     <div class="project-card">
-                    <div class="image-box"></div>
-                    <h3>Lorem ipsum</h3>
-                    <p>Lorem ipsum dolor mala fillerus moros tegus mas te masi lorem dolor ipum loros de mal orefa</p>
-                    <a class="see-more" href="projects.html">See more...</a>
+                    <a class="card-link" href="projects.html"></a>
+                    <div class="image-box"><img src="images/projectImages/portfolio.png" alt="Portfolio Website"></div>
+                    <h3>Portfolio Website</h3>
+                    <p>The portfolio you're viewing right now!</p>
+                    <a class="see-more" href="https://github.com/navill0l/portfolio_sub">See more...</a>
                     </div>
 
                 </div>

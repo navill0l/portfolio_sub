@@ -14,8 +14,9 @@
     <body>
         <header class ="navbar">
             
-                <img src="images/logo.png" alt="IMB Logo" class="logo">
-                <nav class="nav-links">
+                <a href="home.html" aria-label="Home"><img src="images/logo.png" alt="IMB Logo" class="logo"></a>
+                <button class="menu-button" onclick="toggleMenu()"><i class="fa-solid fa-bars"></i></button>
+                <nav id="navLinks" class="nav-links">
                         <a href="home.html">Home</a>
                         <a href="about.html">About</a>
                         <a href="projects.html">Projects</a>
@@ -27,38 +28,66 @@
             <section id="caseStudy-header" class="section top-section">
                 <div class="top-text">
                     <h1>Case Study</h1>
-                    <p>Gorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, </p>
+                    <p>This website is for a gaming club designed to be responsive and user-friendly. It features various interactive elements and appropriate forms and contact information to draw people to the club.</p>
+                    <a class="see-more" href="https://github.com/navill0l/gamingClub">See the whole project on GitHub!</a>
                 </div>
 
                 <div class="top-picture">
-                    <img src="images/landScapePicture.jpg" alt="Photo of Ivan Bautista">
+                    <img src="images/projectImages/leagueClub.png" alt="League Club Website">
                 </div>
             </section>
 
-            <section id="caseStudy-overview">
-                <h2>Overview</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur tempus urna at turpis condimentum lobortis. Ut commodo efficitur neque. Ut diam quam, semper iaculis condimentum ac, vestibulum eu nisl.</p>
+            <section class="section line-above">
+                <h2>Overview:</h2>
+                <p class="case-text">
+                    This website is made for a class in WEBCS. The case study is purely fictional and focuses on the design and development process.
+                </p>
             </section>
 
-            <section id="caseStudy-client">
-                <h2>Client</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur tempus urna at turpis condimentum lobortis. Ut commodo efficitur neque. Ut diam quam, semper iaculis condimentum ac, vestibulum eu nisl.</p>
+            <!-- ===== CLIENT AND SPECIFICATIONS ===== -->
+            <section class="section two-columns">
+                <div>
+                    <h2>Client:</h2>
+                    <p class="case-text">
+                        The client is a fictional club about league of legends that aims to provide a platform for similar gamers to connect, share experiences, and participate in events in the building.
+                    </p>
+                </div>
+
+                <div>
+                    <h2>Specifications:</h2>
+                    <p class="case-text">
+                        The website must be responsive and user-friendly, with various interactive elements and appropriate forms and contact information.
+                    </p>
+                </div>
             </section>
 
-            <section id ="caseStudy-specifications">
-                <h2>Specifications</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur tempus urna at turpis condimentum lobortis. Ut commodo efficitur neque. Ut diam quam, semper iaculis condimentum ac, vestibulum eu nisl.</p>
+            <!-- ===== OUTPUT ===== -->
+            <section class="section">
+                <h2>Output:</h2>
+
+                <div class="output-grid">
+                    <div class="image-box">
+                        <img src="images/projectImages/leagueClubAbout.png" alt="League of Legends Club About Page">
+                    </div>
+                    <div class="image-box">
+                        <img src="images/projectImages/leagueClubCoach.png" alt="League of Legends Club Coach Page">
+                    </div>
+                    <div class="image-box">
+                        <img src="images/projectImages/leagueClubEvents.png" alt="League of Legends Club Events Page">
+                    </div>
+                </div>
+
+                <p class="case-text">
+                    The final output is a responsive and user-friendly website that meets the gaming club's requirements and provides an interactive experience and makes sure to supply them with information and channels to reach the club itself.
+                </p>
             </section>
 
-            <section id = " caseStudy-output">
-                <h2>Output</h2>
-
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur tempus urna at turpis condimentum lobortis. Ut commodo efficitur neque. Ut diam quam, semper iaculis condimentum ac, vestibulum eu nisl.</p>
-            </section>
-
-            <section id="caseStudy-takeaways">
-                <h2>Takeaways</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur tempus urna at turpis condimentum lobortis. Ut commodo efficitur neque. Ut diam quam, semper iaculis condimentum ac, vestibulum eu nisl.</p>
+            <!-- ===== TAKEAWAYS ===== -->
+            <section>
+                <h2>Takeaways:</h2>
+                <p class="case-text">
+                    The website development process gave me lessons in reponsive design, user experience, and making sure the visitors feel comfortable and engaged. I also learned the importance of fundamental information requirements, no matter how well-designed the interface is. If content and information such as contacts is hard to get to or not there at all, visitors won't be able to reach the club.
+                </p>
             </section>
         </main>
     </body>
