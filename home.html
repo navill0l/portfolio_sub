@@ -7,6 +7,9 @@
         <title>Ivan Bautista's Portfolio</title>
         <link rel="stylesheet" href="styles.css">
         <script src="script.js" defer></script>
+
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Encode+Sans+Condensed:wght@500;600&family=Encode+Sans+Expanded:wght@400;500;600&display=swap">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     </head>
     <body>
         <header class ="navbar">
@@ -20,45 +23,89 @@
                 </nav>
         </header>
 
-        <main>
-            <section id="home-header">
-                <h1>Think. Create. Repeat.</h1>
-                <p>Hello there! My name is Ivan Bautista. Based in Pampanga, Philippines, I am an aspiring developer and a student at Holy Angel University majoring in Computer Science. Welcome to my portfolio!</p>
+        <main class="page">
+            <section class="section top-section">
+                <div class="top-text">
+                    <div class="title-row">
+                    <h1>Think. Create. Repeat.</h1>
+
+                    <!-- the three colored icon boxes -->
+                    <div class="icon-boxes">
+                        <span class="icon-box green"><i class="fa-solid fa-sun"></i></span>
+                        <span class="icon-box blue"><i class="fa-solid fa-arrow-up-from-bracket"></i></span>
+                        <span class="icon-box yellow"><i class="fa-solid fa-repeat"></i></span>
+                    </div>
+                    </div>
+
+                    <p>
+                    Hello there! My name is
+                    <strong>Ivan Bautista. Based in Pampanga, Philippines, I am an aspiring developer and a student</strong>
+                    at Holy Angel University majoring in Computer Science. Welcome to my portfolio!
+                    </p>
+                </div>
+
+                <div class="top-picture">
+                    <img src="images/landScapePicture.jpg" alt="Photo of Ivan Bautista">
+                    <p class="caption">Bautista, Ivan Michael M.</p>
+                </div>
             </section>
 
-            <section id="home-projects" class="projects-section">
+            <section class="section">
                 <h2>Featured Projects:</h2>
 
-                <div class="project-box">
-                    <h3>Project 1</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                    <p>See more...</p>
-                </div>
-                <div class="project-box">
-                    <h3>Project 2</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                    <p>See more...</p>
-                </div>
-                <div class="project-box">
-                    <h3>Project 3</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                    <p>See more...</p>
+                <div class="card-grid">
+
+                    <div class="project-card">
+                    <div class="image-box"></div>
+                    <h3>Lorem ipsum</h3>
+                    <p>Lorem ipsum dolor mala fillerus moros tegus mas te masi lorem dolor ipum loros de mal orefa</p>
+                    <a class="see-more" href="projects.html">See more...</a>
+                    </div>
+
+                    <div class="project-card">
+                    <div class="image-box"></div>
+                    <h3>Lorem ipsum</h3>
+                    <p>Lorem ipsum dolor mala fillerus moros tegus mas te masi lorem dolor ipum loros de mal orefa</p>
+                    <a class="see-more" href="projects.html">See more...</a>
+                    </div>
+
+                    <div class="project-card">
+                    <div class="image-box"></div>
+                    <h3>Lorem ipsum</h3>
+                    <p>Lorem ipsum dolor mala fillerus moros tegus mas te masi lorem dolor ipum loros de mal orefa</p>
+                    <a class="see-more" href="projects.html">See more...</a>
+                    </div>
+
                 </div>
             </section>
 
-            <section id="home-contacts" class="contacts-section">
-                <h2>Contacts:</h2>
 
+            <section class="contacts">
+                <h2>Contacts:</h2>
                 <p>You can contact me through these channels:</p>
 
-                <ul>
-                    <li>Linkedin: https://www.linkedin.com/in/ivan-bautista-330a46427/</li>
-                    <li>Github: https://github.com/navill0l</li>
-                    <li>Gmail: bautistamichaelivan@gmail.com</li>
-                    <li>Phone Number: +63-995-849-2866</li>
-                    <li>Facebook: https://www.facebook.com/ivan.bautista.37017</li>
+                <ul class="contact-list">
+                    <li>
+                    <i class="fa-brands fa-linkedin"></i>
+                    <span><strong>Linkedin:</strong> <a href="https://www.linkedin.com/in/ivan-bautista-330a46427/" target="_blank">https://www.linkedin.com/in/ivan-bautista-330a46427/</a></span>
+                    </li>
+                    <li>
+                    <i class="fa-brands fa-github"></i>
+                    <span><strong>Github:</strong> <a href="https://github.com/navill0l" target="_blank">https://github.com/navill0l</a></span>
+                    </li>
+                    <li>
+                    <i class="fa-regular fa-envelope"></i>
+                    <span><strong>Gmail:</strong> <a href="mailto:bautistamichaelivan@gmail.com">bautistamichaelivan@gmail.com</a></span>
+                    </li>
+                    <li>
+                    <i class="fa-solid fa-phone"></i>
+                    <span><strong>Phone Number:</strong> <a href="tel:+639958492866">+63-995-849-2866</a></span>
+                    </li>
+                    <li>
+                    <i class="fa-brands fa-facebook-f"></i>
+                    <span><strong>Facebook:</strong> <a href="https://www.facebook.com/ivan.bautista.37017" target="_blank">https://www.facebook.com/ivan.bautista.37017</a></span>
+                    </li>
                 </ul>
-                </p>
             </section>
         </main>
 

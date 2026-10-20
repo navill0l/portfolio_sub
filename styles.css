@@ -18,7 +18,7 @@ a {
   color: inherit;
 }
 
-/* Theme colors from figma design file */
+/* Theme colors from figma design */
 :root {
   --black: #000000;
   --white: #FFFFFF;
@@ -30,6 +30,22 @@ a {
   --beige: #E9E2D9;
 }
 
+/* PAGE MARGINS from figma design */
+.page {
+  padding: 150px 80px;
+}
+
+.section {
+  margin-bottom: 80px;
+}
+
+.line-above {
+  border-top: 1px solid var(--paragraph-color);
+  padding-top: 50px;
+}
+
+
+/* NAVIGATION BAR */
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -45,7 +61,6 @@ a {
   width: auto;
 }
 
-/* the row of links (HOME ABOUT PROJECTS CASE STUDY) */
 .nav-links {
   display: flex;
   gap: 50px;
@@ -64,7 +79,143 @@ a {
   color: var(--yellow);
 }
 
-/* the link of the page you are on is yellow */
 .nav-links a.active {
   color: var(--yellow);
+}
+
+/* HEADINGS AND TEXT STYLING */
+h1 {
+  font-family: "Encode Sans Condensed", sans-serif;
+  font-weight: 600;
+  font-size: 75px;
+  line-height: 1;
+  letter-spacing: -2px;
+  color: var(--black);
+  margin: 0 0 20px 0;
+}
+
+h2 {
+  font-family: "Encode Sans Condensed", sans-serif;
+  font-weight: 500;
+  font-size: 30px;
+  color: var(--heading2-color);
+  margin: 0 0 20px 0;
+}
+
+h3 {
+  font-weight: 400;
+  font-size: 20px;
+  color: var(--paragraph-color);
+  margin: 16px 0 8px 0;
+}
+
+p {
+  margin: 0 0 20px 0;
+}
+
+.small-text {
+  font-size: 16px;
+  color: #666666;
+}
+
+/* HERO SECTION */
+.top-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 50px;
+}
+
+.top-text {
+  flex: 1;
+}
+
+.top-picture {
+  width: 340px;
+  flex-shrink: 0;
+}
+
+.top-picture img {
+  border-radius: 10px;
+  width: 100%;
+}
+
+.caption {
+  font-size: 16px;
+  color: #666666;
+  margin: 8px 0 0 0;
+}
+
+/* ---------- 7. THE THREE COLORED ICON BOXES NEXT TO "Think. Create. Repeat." ---------- */
+.title-row {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.title-row h1 {
+  margin: 0;
+}
+
+.icon-boxes {
+  display: flex;
+  align-items: flex-end;
+}
+
+.icon-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  color: var(--black);
+  font-size: 16px;
+}
+
+.icon-box.green {
+  background-color: var(--lime-green);
+}
+
+.icon-box.blue {
+  background-color: var(--sky-blue);
+  height: 52px;
+}
+
+.icon-box.yellow {
+  background-color: var(--yellow);
+}
+
+/* PROJECT CARDS - spacing from figma design */
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 50px;
+}
+
+.project-card {
+  background-color: var(--white);
+  padding: 16px;          
+  border-radius: 10px;    
+}
+
+.project-card:hover {
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.image-box {
+  background-color: var(--beige);
+  border-radius: 10px;
+  height: 160px;
+}
+
+.project-card p {
+  font-size: 16px;
+  color: #555555;
+  margin-bottom: 12px;
+}
+
+.see-more {
+  font-size: 16px;
+  color: #555555;
 }
